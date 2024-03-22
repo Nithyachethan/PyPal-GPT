@@ -15,7 +15,7 @@ EXPOSE 8505
 
 # For HTTPS -- REMOVE IF DOES NOT WORK
 # Command to run Streamlit with SSL
-CMD streamlit run app.py --server.port 8505 --server.enableCORS false --server.enableXsrfProtection false --server.sslCertFile=/etc/letsencrypt/live/triathlon.itit.gu.se/cert.pem --server.sslKeyFile=/etc/letsencrypt/live/triathlon.itit.gu.se/privkey.pem
+CMD streamlit run app.py --server.port 8505 --server.enableCORS false 
 #CMD streamlit run app.py --server.enableCORS False --server.port 8501 --server.sslCertFile=/app/cert.pem --server.sslKeyFile=/app/key.pem
 
 # Run streamlit when the container launches
